@@ -1,0 +1,217 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+/*--- navigation bar ---*/
+.navbar {
+  background:#222222;
+}
+.nav-link,
+.navbar-brand {
+  color: #000;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #fff;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+
+.navbar-brand {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+#imgtopid{
+  border-radius: 2px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active1, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active1:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.content {
+  margin: 1em auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 5em;
+  padding-bottom: 1em;
+  position: relative;
+  top: 10%;
+  text-align: left;
+}
+.content h1 {
+  color: #000;
+}
+.content p {
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.text1 {
+  left: 5%;
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.wrapper {
+		background:#EFEFEF;
+		box-shadow: 1px 1px 10px #999;
+    margin: 1em 1em 1em 1em;
+		text-align: center;
+		border-radius: 5px;
+		margin-bottom: 20px !important;
+		padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+	}
+	.scrolls {
+		overflow-x: scroll;
+		overflow-y: hidden;
+    height: 480px;
+    padding-left: -3em;
+	}
+	.imageDiv {
+		margin: 0;
+		height: 480px;
+    width: 600px;
+	}
+	.imageDiv img {
+		box-shadow: 1px 1px 10px #999;
+		margin: 1px;
+		cursor: pointer;
+	}
+
+#s1,#s2,#ss1,#ss2{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#s1:hover,#s2:hover,#ss1:hover,#ss2:hover{opacity: 0.6;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+/*.close {
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}*/
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

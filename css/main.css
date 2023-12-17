@@ -1,0 +1,278 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+/*--- navigation bar ---*/
+.navbar {
+  background:#222222;
+}
+.nav-link,
+.navbar-brand {
+  color: #000;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #fff;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+
+#featureid{
+  box-shadow: 0 0 15px 3px #888888;
+  width: auto;
+  padding: 1em;
+  margin: 2em;
+  border-radius: 1em;
+}
+
+#imgtopid{
+  border-radius: 2px;
+}
+
+.wrapper {
+		background:#EFEFEF;
+		box-shadow: 1px 1px 10px #999;
+    margin: 1em 1em 1em 1em;
+		text-align: center;
+		border-radius: 5px;
+		margin-bottom: 20px !important;
+		padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+	}
+.scrolls {
+		overflow-x: scroll;
+		overflow-y: hidden;
+    height: 480px;
+    padding-left: -3em;
+}
+.imageDiv {
+		margin: 0;
+		height: 480px;
+    width: 2650px;
+}
+.imageDiv img {
+		box-shadow: 1px 1px 10px #999;
+		margin: 1px;
+		cursor: pointer;
+}
+
+
+#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10  {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#s1:hover,#s2:hover,#s3:hover,#s4:hover,#s5:hover,#s6:hover,#s7:hover,#s8:hover,#s9:hover,#s10:hover
+{opacity: 0.6;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+/*.close {
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}*/
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.navbar-brand {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  width: 100%;
+}
+
+.content {
+  margin: 1em auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  top: 10%;
+  text-align: left;
+}
+
+#idH1 {
+  padding-top: 6%;
+  padding-left: 5%;
+  padding-right: 1%;
+  font-variant: small-caps;
+}
+.content h1 {
+  color: #000;
+}
+.content p {
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.text1 {
+  left: 5%;
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.h5 {
+  padding-bottom: 20px;
+  margin: 1em;
+}
+
+.cellN11{
+  width: 180px;
+  float: left;
+  padding: 15px 10px 10px;
+}
+
+.cellN11S{
+  width: 290px;
+  float: left;
+  padding: 30px 10px 20px;
+}
+
+.cellN12{
+  width: 300px;
+  float: right;
+  text-align: left;
+}
+
+.cellN122{
+  width: 300px;
+  padding-top: 15px;
+  padding-right: 0px;
+  float: right;
+  text-align: left;
+}
+
+.cellN1{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ccc;
+  max-width: 500px;
+  min-width: 500px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.cellN1S{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ccc;
+  max-width: 600px;
+  min-width: 600px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.cRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0px;
+  padding-left: 0px;
+  height: auto;
+  float: left;
+  list-style: none;
+}
+
+.cLine:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
